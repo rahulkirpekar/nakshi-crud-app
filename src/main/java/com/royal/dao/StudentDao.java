@@ -53,8 +53,9 @@ public class StudentDao
 				pstmt.setString(1, sbean.getName());
 				pstmt.setInt(2, sbean.getStd());
 				pstmt.setInt(3, sbean.getMarks());
-				pstmt.setInt(4, sbean.getRno());
+				pstmt.setInt(4, rno);
 				
+				System.out.println("pstmt : " + pstmt);
 				rowsAffected = pstmt.executeUpdate();
 			} catch (SQLException e) 
 			{
@@ -147,6 +148,7 @@ public class StudentDao
 				rs.next(); 
 				
 				rno = rs.getInt(1);
+				System.out.println("getStudentByRno()--"+rno);
 				String name = rs.getString(2);
 				int std = rs.getInt(3);
 				int marks = rs.getInt(4);

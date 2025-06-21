@@ -1,0 +1,15 @@
+
+
+MySQL :-
+----------
+	student
+		rno name std marks
+
+CREATE TABLE student
+(
+	rno int AUTO_INCREMENT PRIMARY KEY,
+	name varchar(50),
+	std int,
+	marks int 
+);
+	

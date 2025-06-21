@@ -25,8 +25,44 @@
     <servlet-name>ListStudentServlet</servlet-name>
     <servlet-class>com.royal.controller.ListStudentServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>DeleteStudentServlet</display-name>
+  	<servlet-name>DeleteStudentServlet</servlet-name>
+  	<servlet-class>com.royal.controller.DeleteStudentServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>ListStudentServlet</servlet-name>
     <url-pattern>/ListStudentServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteStudentServlet</servlet-name>
+  	<url-pattern>/DeleteStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>EditStudentServlet</display-name>
+  	<servlet-name>EditStudentServlet</servlet-name>
+  	<servlet-class>com.royal.controller.EditStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditStudentServlet</servlet-name>
+    <url-pattern>/EditStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>UpdateStudentServlet</display-name>
+  	<servlet-name>UpdateStudentServlet</servlet-name>
+  	<servlet-class>com.royal.controller.UpdateStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <url-pattern>/UpdateStudentServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
